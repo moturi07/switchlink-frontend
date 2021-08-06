@@ -48,27 +48,5 @@ export default{
         }
         
     }
-
-    /*name: 'Register',
-    data(){
-        return{
-            email:'',
-            password:'',
-            password_confirm:''
-        }
-    },
-    methods:{
-        async handleSubmit(){
-            await axios.post('register',{
-                    email: this.email,
-                    password: this.password,
-                    password_confirm:this.password_confirm                
-            });
-            //console.log(response);
-            this.$router.push('/login');
-        }
-        
-    }
-    */
 }
 </script>

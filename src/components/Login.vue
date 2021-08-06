@@ -2,6 +2,8 @@
   <form @submit.prevent="handleSubmit">
     <div class="row">
       <div class="col-md-6 mb-5 mx-auto">
+        <p>Users: moturigeorge@gmail.com, moturigeorge1@gmail.com, moturigeorge2@gmail.com</p>
+        <p>Password: 123456</p>
         <div class="card mx-xl-5 mt-5">
           <div class="card-body">
                     <!--Header-->
@@ -26,16 +28,7 @@
                     <div class="text-center mt-4">
                         <button class="btn btn-light-blue waves-effect waves-light" type="submit">Login</button>
                     </div>
-
           </div>
-          <!--Footer
-          <div class="modal-footer">
-            <div class="options font-weight-light">
-              <p>Not a member? <a href="#">Sign Up</a></p>
-              <p>Forgot <a href="#">Password?</a></p>
-            </div>
-          </div>
-          -->
         </div>
       </div>
     </div>
@@ -71,25 +64,6 @@ export default {
         }
         
     }
-
-    /*
-    name:'Login',
-    data(){
-        return{
-            email:'',
-            password:''
-        }
-    },
-    methods: {
-        async handleSubmit(){
-            const response=await axios.post('login', {
-                email: this.email,
-                password: this.password
-            });
-            localStorage.setItem('token',response.data.token);
-        }
-    }
-    */
 }
 </script>
 <style scoped>

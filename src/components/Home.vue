@@ -1,12 +1,13 @@
 <template>
 <div>
+	<h2 class="p-2">Welcome to the Frontend part of the project</h2>
 <div class="text-center p-5 m-auto" v-if="loggedIn">
-    <h2>Welcome Back {{user.email}}</h2>
+    <h4>Welcome Back {{user.email}}</h4>
     <a href="dashboard" class="btn p-3 btn-primary">View Dashboard</a>
 </div>
 <div class="text-center p-5 m-auto" v-if="!loggedIn">
-    <h3>You are not logged in</h3>
-    <p><a href="login" class="btn p-3 btn-primary">Login </a> to continue</p>
+    <h4>You are not logged in</h4>
+    <p><a href="login" class="text-dark p-3">Login </a> to continue</p>
 </div>
 </div>
 </template>

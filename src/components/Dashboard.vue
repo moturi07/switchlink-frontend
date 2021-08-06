@@ -137,7 +137,7 @@ import 'firebase/database';
                     this.loading = true;
                     try {
                         let res = await axios({
-                            url: "https://localhost:44325/api/Accounts/GetAccount/"+user.email+"/",
+                            url: "http://moturi-001-site1.ftempurl.com/api/Accounts/GetAccount/"+user.email+"/",
                             method: "GET",
                         });                        
                         let accounts = JSON.parse(res.data);
@@ -161,13 +161,13 @@ import 'firebase/database';
                 if(user !=null){ 
                     try {
                         let acc_resp =await axios({
-                            url: "https://localhost:44325/api/Accounts/GetAccountNumber/"+user.email+"/",
+                            url: "http://moturi-001-site1.ftempurl.com/api/Accounts/GetAccountNumber/"+user.email+"/",
                             method: "GET",
                         });                     
                         let accounts = JSON.parse(acc_resp.data);
                         let no=accounts[0].account_number;
                         let trans = await axios({
-                            url: "https://localhost:44325/api/values/Get/"+no,
+                            url: "http://moturi-001-site1.ftempurl.com/api/values/Get/"+no,
                             method: "GET",
                         });
                         let transactions= JSON.parse(trans.data);
